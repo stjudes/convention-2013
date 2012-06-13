@@ -8,8 +8,8 @@ var githubhook = require('./node-github-hook/index'),
 var hook = githubhook(8765, servers, function (err, payload) {
   if (!err) {
     //console.log(payload);
-    exec("ls -lah", function (error, stdout, stderr) {
-      content = stdout;
+    exec("cd ../ && git pull", function (error, stdout, stderr) {
+      console.log(stdout);
     });
   } else {
     console.log(err);
