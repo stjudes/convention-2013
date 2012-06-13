@@ -1,4 +1,4 @@
-2013-launch
-===========
+convention-2013
+===============
 
-St Judes Convention 2013 launch (pre-marketing) site
+St Judes Convention 2013 website

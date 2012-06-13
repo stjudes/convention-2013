@@ -1,1 +1,4 @@
-_site/
+dev-post/_site/
+prod-post/_site/
+dev-pre/_site/
+prod-pre/_site/

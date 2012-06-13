@@ -1,0 +1,178 @@
+/*
+*
+*  St Judes Convention 2013		<http://2013.stujudes.org.au/>
+*  by James Ramsay 				<http://jwr.vc/>
+*
+*/
+
+//
+// Important numbers
+//
+
+$line: 24;
+$column: 100% / 18;
+$font-size: 16;
+$em: $font-size * 1;
+
+// Golden Grid System (Joni Korpi)
+@import "GGS";
+
+
+/*
+*
+*	Typography
+*
+*/
+
+body, input, textarea, button, select {
+	text-rendering: optimizeLegibility;
+	font-family: "skolar",serif;
+	font-style: normal;
+	font-weight: 300;
+}
+
+h1, h2, h3 {
+	text-rendering: optimizeLegibility;
+	font-family: "nimbus-sans",sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+
+pre, code {
+	font-family: Menlo, Monaco, monospace;
+}
+
+article p, #content figure, #content header p {
+	margin-bottom: 24/$em;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+
+	article p:last-child {
+		margin-bottom: 0;
+	}
+
+	#content header p {
+		padding-bottom: 23/$em;
+		border-bottom: 1/$em dotted #333;
+		margin: 0;
+	}
+}
+
+h2 {
+	margin-bottom: 12 / 26*1em;
+}
+
+h3 {
+	margin: 48/$em 0 24/$em;
+
+	#download h3, #guide h3 {
+		margin: 24/$em 0 0;
+	}
+
+	#colophon h3 {
+		border-bottom: 1/$em dotted #333;
+		margin: 0 0 11/$em;
+	}
+}
+
+img, .center {
+	text-align: center;
+}
+
+section.divider {
+	border-top:20px dotted #333;
+	-moz-border-image: url("../images/divider.png") 20 0 6 0 repeat;
+	-webkit-border-image: url("../images/divider.png") 20 0 6 0 repeat;
+	border-image: url("../images/divider.png") 20 0 6 0 repeat;
+}
+
+// Masthead
+#masthead {
+	margin: 0;
+	text-align: center;
+	background: rgba(238, 242, 244, 1);
+	.logo {
+		height: 105px;
+		background: url('../images/logo.png') no-repeat;
+		background-position: center center;
+		padding-top: 40px;
+		h1 {
+			margin-left: -1000px;
+			font-size: 0;
+			color: transparent;
+		}
+	}
+	.subline {
+		color: rgb(237, 162, 154);
+		h2 {
+			font-size: 1em;
+			text-transform:uppercase;
+			padding: 0 0 20px;
+		}
+	}
+}
+
+// Illustrations
+img.illustration {
+	padding: 20px;
+}
+
+small,
+code,
+#copyright p {
+	@extend .small;
+}
+
+// Footer
+footer {
+	background: #000;
+	padding: 1em;
+	color: #FFF;
+	text-align: center;
+	a {
+		color: #FFF;
+		text-decoration: none;
+	}
+}
+
+
+/*
+*
+* Smaller screen sizes
+*
+*/
+/* @media screen and (min-width: 640px) */
+@media screen and (max-width: 40em) {
+	// Masthead
+	#masthead {
+		//background: rgb(255, 255, 255);
+		.wrapper {
+			padding: 0;
+		}
+		.logo {
+			background: rgba(230, 119, 150, 1);
+			border-top: 1em solid rgba(166, 224, 253, 1);
+			border-bottom: 1em solid rgba(255, 140, 140, 1);
+			height: auto;
+			padding: 0;
+			h1 {
+				text-transform:uppercase;
+				font-size: 3em;
+				margin: 0;
+				color: rgba(166, 224, 253, 1);
+				padding: 0.5em 0.2em 0.2em;
+			}
+		}
+		.subline {
+			color: rgb(50, 50, 50);
+			h2 {
+				font-size: 0.8em;
+				text-transform:uppercase;
+				padding: 0.5em 0 0.8em;
+			}
+		}
+	}
+}
+
+@import "retina";
