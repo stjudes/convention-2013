@@ -8,7 +8,7 @@ var githubhook = require('./node-github-hook/index'),
 var hook = githubhook(8765, servers, function (err, payload) {
   if (!err) {
     //console.log(payload);
-    exec("cd ../ && git pull", function (error, stdout, stderr) {
+    exec("cd ../ && git checkout . && git pull", function (error, stdout, stderr) {
       console.log(stdout);
     });
   } else {
