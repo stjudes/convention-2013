@@ -14,6 +14,13 @@ $column: 100% / 18;
 $font-size: 16;
 $em: $font-size * 1;
 
+
+//
+// Important colours
+//
+
+$primary: #993399;
+
 // Golden Grid System (Joni Korpi)
 @import "GGS";
 
@@ -40,6 +47,13 @@ h1, h2, h3 {
 
 pre, code {
 	font-family: Menlo, Monaco, monospace;
+}
+
+a {
+	text-decoration: none;
+	border-bottom: 1px $primary solid;
+	padding-bottom: 2px;
+	margin-bottom: -2px;
 }
 
 article p, #content figure, #content header p {
@@ -72,8 +86,14 @@ h3 {
 
 	#colophon h3 {
 		border-bottom: 1/$em dotted #333;
-		margin: 0 0 11/$em;
+		margin: 000 0 11/$em;
 	}
+}
+
+h3.intro {
+	font-family: "skolar",serif;
+	font-weight: 400;
+	font-size: 1.25em;
 }
 
 img, .center {
@@ -87,30 +107,194 @@ section.divider {
 	border-image: url("../images/divider.png") 20 0 6 0 repeat;
 }
 
-// Masthead
+/*
+*
+* Colour
+*
+*/
+
+.bg-light {
+	background-color: lighten($primary, 5%);
+}
+
+.bg-medium {
+	background-color: $primary;
+}
+
+.bg-dark {
+	background-color: darken($primary, 5%);
+}
+
+/*
+*
+* Masthead
+*
+*/
 #masthead {
-	margin: 0;
+  #logo-time, #logo-to, #logo-focus {
+	  text-indent: -9999px;
+	  white-space: nowrap;
+	  overflow: hidden;
+	  padding-top: 5px;
+	  margin-top: 5px;
+	  margin-bottom: 0;
+  }
+  #logo-stjudes {
+	  text-indent: -9999px;
+	  white-space: nowrap;
+	  overflow: hidden;
+	  background: url(../images/st-judes.png) 0 0 no-repeat;
+  }
+	#logo-time {
+		background: url(../images/logo-time.png) 0% 5px no-repeat;
+	}
+	#logo-to {
+		background: url(../images/logo-to.png) 0% 5px no-repeat;
+	}
+	#logo-focus {
+		background: url(../images/logo-focus.png) 0% 5px no-repeat;
+	}
+}
+
+/*
+*
+* Conference
+*
+*/
+#conference {
+	margin-top: 60px;
 	text-align: center;
-	background: rgba(238, 242, 244, 1);
-	.logo {
-		height: 105px;
-		background: url('../images/logo.png') no-repeat;
-		background-position: center center;
-		padding-top: 40px;
-		h1 {
-			margin-left: -1000px;
-			font-size: 0;
-			color: transparent;
+	
+	h2 {
+		text-transform: uppercase;
+		font-weight: normal;
+	}
+	
+	ul.speaker-list {
+		width: 100%;
+	}
+	.speaker-list {
+		padding: 0;
+		list-style: none;
+		margin: 2em 15%;
+		
+		li {
+			float: left;
+			overflow: hidden;
+			width: 30%;
+			
+			img {
+				width: 100%;
+			}
+			
+		}
+		li:first-child {
+			margin-right: 10%;
+		}
+		li:last-child {
+			margin-right: 15%;
 		}
 	}
-	.subline {
-		color: rgb(237, 162, 154);
-		h2 {
-			font-size: 1em;
-			text-transform:uppercase;
-			padding: 0 0 20px;
+}
+
+#value-prop {
+	width: 100%;
+	
+	h1 {
+		// color: #FFF;
+		text-align: center;
+		padding-top: 1em;
+	}
+	
+	h3 {
+		text-align: center;
+		// color: #FFF;
+	}
+}
+#activities {
+	ul.icon-list {
+		width: 100%;
+	}
+	
+	.icon-list {
+		padding: 0;
+		list-style: none;
+		margin: 2em 6%;
+		
+		li {
+			width: 20%;
+			float: left;
+			overflow: hidden;
+			margin-right: 3%;
+		}
+		
+		li:last-child {
+			margin-right: 5%;
+		}
+		
+		.img_wrap {
+			display: block;
+			text-align: center;
+			background: $primary;
+			border-radius: 4px;
+			padding: 15% 0;
+		}
+		
+		img {
+			width: 100%;
+			max-width: 140px;
+		}
+		
+		.desc_wrap {
+			display: block;
+			padding: 1em 0;
+			background: url(../images/tri_purple.png) 50% 0 no-repeat;
+			
+			h3, h4 {
+				text-align: center;
+			}
+			h4 {
+				font-weight: 500;
+			}
+			h3 {
+				//font-size: #{22 / $em}em;
+				//line-height: ($line*2) / 22 * 1em;
+				margin: 0;
+			}
 		}
 	}
+}
+
+/*
+*
+* Gods vision
+*
+*/
+#god-vision {
+	background-image: url('../images/earthrise.jpg');
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 1000px;
+	padding-top: 250px;
+	.p-content {
+		color: white;
+		max-width: 60%;
+		margin: 0 auto;
+		background: rgba( 200, 0, 0, 0.7);
+		padding: 2em;
+	}
+}
+
+// Elements
+span.btn {
+	background: $primary;
+	padding: 10px 20px;
+	border-radius: 4px;
+	color: white;
+	font-weight: 500;
 }
 
 // Illustrations
@@ -133,6 +317,7 @@ footer {
 	a {
 		color: #FFF;
 		text-decoration: none;
+		border-color: #FFF;
 	}
 }
 
@@ -146,32 +331,7 @@ footer {
 @media screen and (max-width: 40em) {
 	// Masthead
 	#masthead {
-		//background: rgb(255, 255, 255);
-		.wrapper {
-			padding: 0;
-		}
-		.logo {
-			background: rgba(230, 119, 150, 1);
-			border-top: 1em solid rgba(166, 224, 253, 1);
-			border-bottom: 1em solid rgba(255, 140, 140, 1);
-			height: auto;
-			padding: 0;
-			h1 {
-				text-transform:uppercase;
-				font-size: 3em;
-				margin: 0;
-				color: rgba(166, 224, 253, 1);
-				padding: 0.5em 0.2em 0.2em;
-			}
-		}
-		.subline {
-			color: rgb(50, 50, 50);
-			h2 {
-				font-size: 0.8em;
-				text-transform:uppercase;
-				padding: 0.5em 0 0.8em;
-			}
-		}
+		
 	}
 }
 

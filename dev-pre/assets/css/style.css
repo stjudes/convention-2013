@@ -123,8 +123,8 @@ body {
 code,
 #copyright p {
   /* 13px / 18px */
-  font-size: 0.813em;
-  line-height: 1.385em; }
+  font-size: 0.8125em;
+  line-height: 1.38462em; }
 
 .normal, h3 {
   /* 16px / 24px */
@@ -135,22 +135,22 @@ code,
 .large, h2, h1 {
   /* 26 / 36px */
   font-size: 1.625em;
-  line-height: 1.385em; }
+  line-height: 1.38462em; }
 
 .huge, .ie h1 {
   /* 42px / 48px */
   font-size: 2.625em;
-  line-height: 1.143em; }
+  line-height: 1.14286em; }
 
 .massive {
   /* 68px / 72px */
   font-size: 4.25em;
-  line-height: 1.059em; }
+  line-height: 1.05882em; }
 
 .gigantic {
   /* 110px / 120px */
   font-size: 6.875em;
-  line-height: 1.091em; }
+  line-height: 1.09091em; }
 
 /*
 *
@@ -160,11 +160,11 @@ code,
 *  5.55555% | %  25  50  75  100 | 5.55555%
 *
 */
-header, #twoway {
-  margin: 0 5.556%; }
+#twoway, .inner {
+  margin: 0 5.55556%; }
 
 h1, h2 {
-  margin: 0.923em 0 1.385em; }
+  margin: 0.92308em 0 1.38462em; }
 
 h2 {
   font-weight: normal; }
@@ -192,19 +192,19 @@ h3 {
 .ie body {
   width: 40em;
   margin: 0 auto;
-  font-size: 1.063em; }
+  font-size: 1.0625em; }
 
 .ie h1 {
-  margin: 1.143em 0 0.571em; }
+  margin: 1.14286em 0 0.57143em; }
 
 /* @media screen and (min-width: 640px) */
 @media screen and (min-width: 40em) {
   body {
     /* Zoom baseline grid to 17/16 = 1.0625 */
-    font-size: 1.063em; }
+    font-size: 1.0625em; }
 
   h1 {
-    margin: 1.143em 0 0.571em; } }
+    margin: 1.14286em 0 0.57143em; } }
 /*
 *
 *  Eight-column grid active
@@ -227,33 +227,33 @@ h3 {
 @media screen and (min-width: 55.5em) {
   body {
     /* Zoom baseline grid to 17/16 = 1.0625 */
-    font-size: 1.063em; } }
+    font-size: 1.0625em; } }
 /* @media screen and (min-width: 984px) */
 @media screen and (min-width: 61.5em) {
   body {
     /* Reset baseline grid to 16/16 = 1.0 */
     font-size: 1em; }
 
-  header, #twoway {
-    margin: 0 16.667%; } }
+  #twoway, .inner {
+    margin: 0 16.66667%; } }
 /* @media screen and (min-width: 1200px) */
 @media screen and (min-width: 75em) {
   body {
     /* Zoom baseline grid to 17/16 = 1.0625 */
-    font-size: 1.063em; } }
+    font-size: 1.0625em; } }
 /* @media screen and (min-width: 1392px) */
 @media screen and (min-width: 87em) {
   body {
     /* Reset baseline grid to 16/16 = 1.0 */
     font-size: 1em; }
 
-  header, #twoway {
-    margin: 0 27.778%; } }
+  #twoway, .inner {
+    margin: 0 27.77778%; } }
 /* @media screen and (min-width: 1680px) */
 @media screen and (min-width: 105em) {
   body {
     /* Zoom baseline grid to 17/16 = 1.0625 */
-    font-size: 1.063em; } }
+    font-size: 1.0625em; } }
 /*
 *
 *  Sixteen-column grid active
@@ -265,10 +265,10 @@ h3 {
 */
 /* @media screen and (min-width: 1872px) */
 @media screen and (min-width: 117em) {
-  header, #twoway {
-    margin: 0 5.556%; }
+  #twoway, .inner {
+    margin: 0 5.55556%; }
 
-  header .wrapper {
+  .wrapper {
     width: 37.5%;
     margin-left: 25%; }
 
@@ -303,6 +303,12 @@ h1, h2, h3 {
 pre, code {
   font-family: Menlo, Monaco, monospace; }
 
+a {
+  text-decoration: none;
+  border-bottom: 1px #993399 solid;
+  padding-bottom: 2px;
+  margin-bottom: -2px; }
+
 article p, #content figure, #content header p {
   margin-bottom: 1.5;
   -webkit-hyphens: auto;
@@ -311,20 +317,25 @@ article p, #content figure, #content header p {
   article p article p:last-child, #content figure article p:last-child, #content header p article p:last-child {
     margin-bottom: 0; }
   article p #content header p, #content figure #content header p, #content header p #content header p {
-    padding-bottom: 1.438;
-    border-bottom: 0.063 dotted #333333;
+    padding-bottom: 1.4375;
+    border-bottom: 0.0625 dotted #333333;
     margin: 0; }
 
 h2 {
-  margin-bottom: 0.462em; }
+  margin-bottom: 0.46154em; }
 
 h3 {
   margin: 3 0 1.5; }
   h3 #download h3, h3 #guide h3 {
     margin: 1.5 0 0; }
   h3 #colophon h3 {
-    border-bottom: 0.063 dotted #333333;
-    margin: 0 0 0.688; }
+    border-bottom: 0.0625 dotted #333333;
+    margin: 0 0 0.6875; }
+
+h3.intro {
+  font-family: "skolar",serif;
+  font-weight: 400;
+  font-size: 1.25em; }
 
 img, .center {
   text-align: center; }
@@ -335,25 +346,140 @@ section.divider {
   -webkit-border-image: url("../images/divider.png") 20 0 6 0 repeat;
   border-image: url("../images/divider.png") 20 0 6 0 repeat; }
 
-#masthead {
-  margin: 0;
-  text-align: center;
-  background: #eef2f4; }
-  #masthead .logo {
-    height: 105px;
-    background: url("../images/logo.png") no-repeat;
-    background-position: center center;
-    padding-top: 40px; }
-    #masthead .logo h1 {
-      margin-left: -1000px;
-      font-size: 0;
-      color: transparent; }
-  #masthead .subline {
-    color: #eda29a; }
-    #masthead .subline h2 {
-      font-size: 1em;
-      text-transform: uppercase;
-      padding: 0 0 20px; }
+/*
+*
+* Colour
+*
+*/
+.bg-light {
+  background-color: #ac39ac; }
+
+.bg-medium {
+  background-color: #993399; }
+
+.bg-dark {
+  background-color: #862d86; }
+
+/*
+*
+* Masthead
+*
+*/
+#masthead #logo-time, #masthead #logo-to, #masthead #logo-focus {
+  text-indent: -9999px;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-top: 5px;
+  margin-top: 5px;
+  margin-bottom: 0; }
+#masthead #logo-stjudes {
+  text-indent: -9999px;
+  white-space: nowrap;
+  overflow: hidden;
+  background: url(../images/st-judes.png) 0 0 no-repeat; }
+#masthead #logo-time {
+  background: url(../images/logo-time.png) 0% 5px no-repeat; }
+#masthead #logo-to {
+  background: url(../images/logo-to.png) 0% 5px no-repeat; }
+#masthead #logo-focus {
+  background: url(../images/logo-focus.png) 0% 5px no-repeat; }
+
+/*
+*
+* Conference
+*
+*/
+#conference {
+  margin-top: 60px;
+  text-align: center; }
+  #conference h2 {
+    text-transform: uppercase;
+    font-weight: normal; }
+  #conference ul.speaker-list {
+    width: 100%; }
+  #conference .speaker-list {
+    padding: 0;
+    list-style: none;
+    margin: 2em 15%; }
+    #conference .speaker-list li {
+      float: left;
+      overflow: hidden;
+      width: 30%; }
+      #conference .speaker-list li img {
+        width: 100%; }
+    #conference .speaker-list li:first-child {
+      margin-right: 10%; }
+    #conference .speaker-list li:last-child {
+      margin-right: 15%; }
+
+#value-prop {
+  width: 100%; }
+  #value-prop h1 {
+    text-align: center;
+    padding-top: 1em; }
+  #value-prop h3 {
+    text-align: center; }
+
+#activities ul.icon-list {
+  width: 100%; }
+#activities .icon-list {
+  padding: 0;
+  list-style: none;
+  margin: 2em 6%; }
+  #activities .icon-list li {
+    width: 20%;
+    float: left;
+    overflow: hidden;
+    margin-right: 3%; }
+  #activities .icon-list li:last-child {
+    margin-right: 5%; }
+  #activities .icon-list .img_wrap {
+    display: block;
+    text-align: center;
+    background: #993399;
+    border-radius: 4px;
+    padding: 15% 0; }
+  #activities .icon-list img {
+    width: 100%;
+    max-width: 140px; }
+  #activities .icon-list .desc_wrap {
+    display: block;
+    padding: 1em 0;
+    background: url(../images/tri_purple.png) 50% 0 no-repeat; }
+    #activities .icon-list .desc_wrap h3, #activities .icon-list .desc_wrap h4 {
+      text-align: center; }
+    #activities .icon-list .desc_wrap h4 {
+      font-weight: 500; }
+    #activities .icon-list .desc_wrap h3 {
+      margin: 0; }
+
+/*
+*
+* Gods vision
+*
+*/
+#god-vision {
+  background-image: url("../images/earthrise.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 1000px;
+  padding-top: 250px; }
+  #god-vision .p-content {
+    color: white;
+    max-width: 60%;
+    margin: 0 auto;
+    background: rgba(200, 0, 0, 0.7);
+    padding: 2em; }
+
+span.btn {
+  background: #993399;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 500; }
 
 img.illustration {
   padding: 20px; }
@@ -365,7 +491,8 @@ footer {
   text-align: center; }
   footer a {
     color: #FFF;
-    text-decoration: none; }
+    text-decoration: none;
+    border-color: #FFF; }
 
 /*
 *
@@ -373,24 +500,3 @@ footer {
 *
 */
 /* @media screen and (min-width: 640px) */
-@media screen and (max-width: 40em) {
-  #masthead .wrapper {
-    padding: 0; }
-  #masthead .logo {
-    background: #e67796;
-    border-top: 1em solid #a6e0fd;
-    border-bottom: 1em solid #ff8c8c;
-    height: auto;
-    padding: 0; }
-    #masthead .logo h1 {
-      text-transform: uppercase;
-      font-size: 3em;
-      margin: 0;
-      color: #a6e0fd;
-      padding: 0.5em 0.2em 0.2em; }
-  #masthead .subline {
-    color: #323232; }
-    #masthead .subline h2 {
-      font-size: 0.8em;
-      text-transform: uppercase;
-      padding: 0.5em 0 0.8em; } }
