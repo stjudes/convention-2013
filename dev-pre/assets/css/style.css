@@ -438,7 +438,7 @@ section.divider {
     text-align: center;
     background: #993399;
     border-radius: 4px;
-    padding: 15% 0; }
+    padding: 0 0; }
   #activities .icon-list img {
     width: 100%;
     max-width: 140px; }
@@ -494,6 +494,16 @@ footer {
     text-decoration: none;
     border-color: #FFF; }
 
+/* @media screen and (min-width: 640px) */
+/* @media screen and (min-width: 720px) */
+/* @media screen and (min-width: 888px) */
+@media screen and (min-width: 55.5em) {
+  #activities .icon-list .img_wrap {
+    padding: 12% 0; } }
+/* @media screen and (min-width: 984px) */
+@media screen and (min-width: 61.5em) {
+  #activities .icon-list .img_wrap {
+    padding: 15% 0; } }
 /*
 *
 * Smaller screen sizes
