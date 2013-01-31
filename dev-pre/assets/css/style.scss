@@ -178,6 +178,10 @@ section.divider {
 		list-style: none;
 		margin: 2em 15%;
 		
+		h3 {
+			margin-bottom: 3em;
+		}
+		
 		li {
 			float: left;
 			overflow: hidden;
@@ -194,6 +198,9 @@ section.divider {
 		li:last-child {
 			margin-right: 15%;
 		}
+	}
+	.register h3 {
+		margin-bottom: 3em;
 	}
 }
 

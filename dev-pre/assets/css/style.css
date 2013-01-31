@@ -401,6 +401,8 @@ section.divider {
     padding: 0;
     list-style: none;
     margin: 2em 15%; }
+    #conference .speaker-list h3 {
+      margin-bottom: 3em; }
     #conference .speaker-list li {
       float: left;
       overflow: hidden;
@@ -411,6 +413,8 @@ section.divider {
       margin-right: 10%; }
     #conference .speaker-list li:last-child {
       margin-right: 15%; }
+  #conference .register h3 {
+    margin-bottom: 3em; }
 
 #value-prop {
   width: 100%; }
