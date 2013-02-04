@@ -204,7 +204,7 @@ section.divider {
 	}
 }
 
-#value-prop {
+#value-prop, #accom-prop {
 	width: 100%;
 	
 	h1 {
@@ -271,6 +271,99 @@ section.divider {
 		}
 	}
 }
+
+
+/*
+*
+* Accommodation
+*
+*/
+
+#accommodation {
+	ul.icon-list {
+		width: 100%;
+	}
+	
+	.icon-list {
+		padding: 0;
+		list-style: none;
+		margin: 2em 6%;
+		
+		li {
+			width: 20%;
+			float: left;
+			overflow: hidden;
+			margin-right: 3%;
+		}
+		
+		li:last-child {
+			margin-right: 5%;
+		}
+		
+		.img_wrap {
+			display: block;
+			text-align: center;
+			background: $primary;
+			border-radius: 4px;
+			padding: 0 0;
+		}
+		
+		img {
+			width: 100%;
+			max-width: 140px;
+		}
+		
+		.desc_wrap {
+			display: block;
+			padding: 1em 0;
+			background: url(../images/tri_purple.png) 50% 0 no-repeat;
+			
+			h3, h4 {
+				text-align: center;
+			}
+			h4 {
+				font-weight: 500;
+			}
+			h3 {
+				//font-size: #{22 / $em}em;
+				//line-height: ($line*2) / 22 * 1em;
+				margin: 0;
+			}
+		}
+	}
+
+	.camping, .cabin, .valley, .lodge {
+	  min-height: 200px;
+	
+		display: block;
+		text-align: center;
+		border-radius: 4px;
+		padding: 0 0;
+
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	
+	.camping {
+		background: url(../images/accom-camping.jpg) no-repeat center center;
+	}
+	
+	.cabin {
+		background: url(../images/accom-cabin.jpg) no-repeat center center;
+	}
+	
+	.valley {
+		background: url(../images/accom-valley.jpg) no-repeat center center;
+	}
+	
+	.lodge {
+		background: url(../images/accom-lodge.jpg) no-repeat center center;
+	}
+}
+
+
 
 /*
 *

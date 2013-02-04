@@ -416,12 +416,12 @@ section.divider {
   #conference .register h3 {
     margin-bottom: 3em; }
 
-#value-prop {
+#value-prop, #accom-prop {
   width: 100%; }
-  #value-prop h1 {
+  #value-prop h1, #accom-prop h1 {
     text-align: center;
     padding-top: 1em; }
-  #value-prop h3 {
+  #value-prop h3, #accom-prop h3 {
     text-align: center; }
 
 #activities ul.icon-list {
@@ -456,6 +456,62 @@ section.divider {
       font-weight: 500; }
     #activities .icon-list .desc_wrap h3 {
       margin: 0; }
+
+/*
+*
+* Accommodation
+*
+*/
+#accommodation ul.icon-list {
+  width: 100%; }
+#accommodation .icon-list {
+  padding: 0;
+  list-style: none;
+  margin: 2em 6%; }
+  #accommodation .icon-list li {
+    width: 20%;
+    float: left;
+    overflow: hidden;
+    margin-right: 3%; }
+  #accommodation .icon-list li:last-child {
+    margin-right: 5%; }
+  #accommodation .icon-list .img_wrap {
+    display: block;
+    text-align: center;
+    background: #993399;
+    border-radius: 4px;
+    padding: 0 0; }
+  #accommodation .icon-list img {
+    width: 100%;
+    max-width: 140px; }
+  #accommodation .icon-list .desc_wrap {
+    display: block;
+    padding: 1em 0;
+    background: url(../images/tri_purple.png) 50% 0 no-repeat; }
+    #accommodation .icon-list .desc_wrap h3, #accommodation .icon-list .desc_wrap h4 {
+      text-align: center; }
+    #accommodation .icon-list .desc_wrap h4 {
+      font-weight: 500; }
+    #accommodation .icon-list .desc_wrap h3 {
+      margin: 0; }
+#accommodation .camping, #accommodation .cabin, #accommodation .valley, #accommodation .lodge {
+  min-height: 200px;
+  display: block;
+  text-align: center;
+  border-radius: 4px;
+  padding: 0 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+#accommodation .camping {
+  background: url(../images/accom-camping.jpg) no-repeat center center; }
+#accommodation .cabin {
+  background: url(../images/accom-cabin.jpg) no-repeat center center; }
+#accommodation .valley {
+  background: url(../images/accom-valley.jpg) no-repeat center center; }
+#accommodation .lodge {
+  background: url(../images/accom-lodge.jpg) no-repeat center center; }
 
 /*
 *
