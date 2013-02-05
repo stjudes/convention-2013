@@ -332,7 +332,7 @@ section.divider {
 		}
 	}
 
-	.camping, .cabin, .valley, .lodge {
+	.camping, .aframe, .valley, .lodge {
 	  min-height: 200px;
 	
 		display: block;
@@ -347,19 +347,23 @@ section.divider {
 	}
 	
 	.camping {
-		background: url(../images/accom-camping.jpg) no-repeat center center;
+		background: url(../images/accom-camping.png) no-repeat center center;
+		background-size: 100%;
 	}
 	
-	.cabin {
-		background: url(../images/accom-cabin.jpg) no-repeat center center;
+	.aframe {
+		background: url(../images/accom-aframe.png) no-repeat center center;
+		background-size: 100%;
 	}
 	
 	.valley {
-		background: url(../images/accom-valley.jpg) no-repeat center center;
+		background: url(../images/accom-valley.png) no-repeat center center;
+		background-size: 100%;
 	}
 	
 	.lodge {
-		background: url(../images/accom-lodge.jpg) no-repeat center center;
+		background: url(../images/accom-lodge.png) no-repeat center center;
+		background-size: 100%;
 	}
 }
 

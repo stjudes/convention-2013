@@ -494,7 +494,7 @@ section.divider {
       font-weight: 500; }
     #accommodation .icon-list .desc_wrap h3 {
       margin: 0; }
-#accommodation .camping, #accommodation .cabin, #accommodation .valley, #accommodation .lodge {
+#accommodation .camping, #accommodation .aframe, #accommodation .valley, #accommodation .lodge {
   min-height: 200px;
   display: block;
   text-align: center;
@@ -505,13 +505,17 @@ section.divider {
   -o-background-size: cover;
   background-size: cover; }
 #accommodation .camping {
-  background: url(../images/accom-camping.jpg) no-repeat center center; }
-#accommodation .cabin {
-  background: url(../images/accom-cabin.jpg) no-repeat center center; }
+  background: url(../images/accom-camping.png) no-repeat center center;
+  background-size: 100%; }
+#accommodation .aframe {
+  background: url(../images/accom-aframe.png) no-repeat center center;
+  background-size: 100%; }
 #accommodation .valley {
-  background: url(../images/accom-valley.jpg) no-repeat center center; }
+  background: url(../images/accom-valley.png) no-repeat center center;
+  background-size: 100%; }
 #accommodation .lodge {
-  background: url(../images/accom-lodge.jpg) no-repeat center center; }
+  background: url(../images/accom-lodge.png) no-repeat center center;
+  background-size: 100%; }
 
 /*
 *
