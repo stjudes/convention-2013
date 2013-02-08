@@ -290,15 +290,10 @@ section.divider {
 		list-style: none;
 		margin: 2em 6%;
 		
+		
 		li {
-			width: 20%;
 			float: left;
 			overflow: hidden;
-			margin-right: 3%;
-		}
-		
-		li:last-child {
-			margin-right: 5%;
 		}
 		
 		.img_wrap {
@@ -431,7 +426,18 @@ footer {
 /* @media screen and (min-width: 640px) */
 @media screen and (min-width: 40em) {
 
-	
+	#activities, #accommodation {
+		.icon-list {
+			li {
+				width: 40%;
+				margin-right: 10%;
+			}
+			
+			li:last-child {
+				margin-right: 5%;
+			}
+		}
+	}
 
 }
 
@@ -445,17 +451,44 @@ footer {
 /* @media screen and (min-width: 888px) */
 @media screen and (min-width: 55.5em) {
 
-	#activities .icon-list .img_wrap {
-		padding: 12% 0;
+	#activities, #accommodation {
+		.icon-list {
+			li {
+				width: 20%;
+				margin-right: 3%;
+			}
+			
+			li:last-child {
+				margin-right: 5%;
+			}
+			
+			.img_wrap {
+				padding: 12% 0;
+			}
+		}
 	}
 
 }
 
 /* @media screen and (min-width: 984px) */
 @media screen and (min-width: 61.5em) {
-
-	#activities .icon-list .img_wrap {
-		padding: 15% 0;
+	
+	
+	#activities, #accommodation {
+		.icon-list {
+			li {
+				width: 20%;
+				margin-right: 3%;
+			}
+			
+			li:last-child {
+				margin-right: 5%;
+			}
+			
+			.img_wrap {
+				padding: 15% 0;
+			}
+		}
 	}
 	
 }
@@ -471,6 +504,13 @@ footer {
 	// Masthead
 	#masthead {
 		
+	}
+	
+	#activities, #accommodation {
+		.icon-list li {
+			width: 90%;
+			padding-right: 10%;
+		}
 	}
 }
 
