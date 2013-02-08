@@ -455,7 +455,8 @@ section.divider {
     #activities .icon-list .desc_wrap h4 {
       font-weight: 500; }
     #activities .icon-list .desc_wrap h3 {
-      margin: 0; }
+      margin: 0;
+      margin-bottom: 1em; }
 
 /*
 *
@@ -493,7 +494,8 @@ section.divider {
     #accommodation .icon-list .desc_wrap h4 {
       font-weight: 500; }
     #accommodation .icon-list .desc_wrap h3 {
-      margin: 0; }
+      margin: 0;
+      margin-bottom: 1em; }
 #accommodation .camping, #accommodation .aframe, #accommodation .valley, #accommodation .lodge {
   min-height: 200px;
   display: block;
