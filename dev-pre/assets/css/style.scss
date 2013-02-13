@@ -514,4 +514,29 @@ footer {
 	}
 }
 
+/*
+*
+* Retina displays
+*
+*/
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+	#logo-stjudes {
+		background: url(../images/st-judes@2x.png) 0 0 no-repeat;
+		// background-size: 50%;
+	}
+	#logo-time {
+		background: url(../images/logo-time@2x.png) 0% 5px no-repeat;
+		// background-size: 50%;
+	}
+	#logo-to {
+		background: url(../images/logo-to@2x.png) 0% 5px no-repeat;
+		// background-size: 50%;
+	}
+	#logo-focus {
+		background: url(../images/logo-focus@2x.png) 0% 5px no-repeat;
+		// background-size: 50%;
+	}
+}
+
+
 @import "retina";

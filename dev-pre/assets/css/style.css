@@ -592,3 +592,20 @@ footer {
   #activities .icon-list li, #accommodation .icon-list li {
     width: 90%;
     padding-right: 10%; } }
+/*
+*
+* Retina displays
+*
+*/
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  #logo-stjudes {
+    background: url(../images/st-judes@2x.png) 0 0 no-repeat; }
+
+  #logo-time {
+    background: url(../images/logo-time@2x.png) 0% 5px no-repeat; }
+
+  #logo-to {
+    background: url(../images/logo-to@2x.png) 0% 5px no-repeat; }
+
+  #logo-focus {
+    background: url(../images/logo-focus@2x.png) 0% 5px no-repeat; } }
